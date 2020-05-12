@@ -81,8 +81,8 @@
 
 <meta name="description" content="几种点云配准算法比较参考许多博客，看了点云配准的好多算法，决定对这几天搞得点云配准做一个总结，主要也防止自己忘掉。主要参考下面这个博客，链接已经附上。https:&#x2F;&#x2F;blog.csdn.net&#x2F;peach_blossom&#x2F;article&#x2F;details&#x2F;78506184 一、算法实现软硬件环境CPU：intel corei5-5200 @2.20Hz  显卡：Nvidia GeForce GTX">
 <meta property="og:type" content="article">
-<meta property="og:title" content="点云配准算法比较">
-<meta property="og:url" content="http://www.louyunge.top/2020/05/11/%E7%82%B9%E4%BA%91%E9%85%8D%E5%87%86%E7%AE%97%E6%B3%95%E6%AF%94%E8%BE%83/index.html">
+<meta property="og:title" content="几种点云配准算法比较">
+<meta property="og:url" content="http://www.louyunge.top/2019/06/28/%E7%82%B9%E4%BA%91%E9%85%8D%E5%87%86%E7%AE%97%E6%B3%95%E6%AF%94%E8%BE%83/index.html">
 <meta property="og:site_name" content="阁楼">
 <meta property="og:description" content="几种点云配准算法比较参考许多博客，看了点云配准的好多算法，决定对这几天搞得点云配准做一个总结，主要也防止自己忘掉。主要参考下面这个博客，链接已经附上。https:&#x2F;&#x2F;blog.csdn.net&#x2F;peach_blossom&#x2F;article&#x2F;details&#x2F;78506184 一、算法实现软硬件环境CPU：intel corei5-5200 @2.20Hz  显卡：Nvidia GeForce GTX">
 <meta property="og:locale" content="zh_CN">
@@ -103,8 +103,8 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190305165047499.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzIzNjk0NA==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190305165111748.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzIzNjk0NA==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190305165139347.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzIzNjk0NA==,size_16,color_FFFFFF,t_70">
-<meta property="article:published_time" content="2020-05-11T13:22:21.384Z">
-<meta property="article:modified_time" content="2020-05-11T13:26:45.997Z">
+<meta property="article:published_time" content="2019-06-28T14:36:00.000Z">
+<meta property="article:modified_time" content="2020-05-12T13:25:19.718Z">
 <meta property="article:author" content="Gelou">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190305162728498.png">
@@ -137,13 +137,13 @@
 
 
 
-  <link rel="canonical" href="http://www.louyunge.top/2020/05/11/点云配准算法比较/"/>
+  <link rel="canonical" href="http://www.louyunge.top/2019/06/28/点云配准算法比较/"/>
 
 
 
 
 
-  <title>点云配准算法比较 | 阁楼</title>
+  <title>几种点云配准算法比较 | 阁楼</title>
   
 
 
@@ -270,7 +270,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.louyunge.top/louyunge.github.io/2020/05/11/%E7%82%B9%E4%BA%91%E9%85%8D%E5%87%86%E7%AE%97%E6%B3%95%E6%AF%94%E8%BE%83/">
+    <link itemprop="mainEntityOfPage" href="http://www.louyunge.top/louyunge.github.io/2019/06/28/%E7%82%B9%E4%BA%91%E9%85%8D%E5%87%86%E7%AE%97%E6%B3%95%E6%AF%94%E8%BE%83/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Gelou">
@@ -287,7 +287,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">点云配准算法比较</h1>
+          <h1 class="post-title" itemprop="name headline">几种点云配准算法比较</h1>
         
 
         <div class="post-meta">
@@ -299,8 +299,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-05-11T21:22:21+08:00">
-                2020-05-11
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-06-28T22:36:00+08:00">
+                2019-06-28
               </time>
             
 
@@ -310,6 +310,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/louyunge.github.io/categories/%E7%82%B9%E4%BA%91/" itemprop="url" rel="index">
+                    <span itemprop="name">点云</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -318,8 +340,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/louyunge.github.io/2020/05/11/%E7%82%B9%E4%BA%91%E9%85%8D%E5%87%86%E7%AE%97%E6%B3%95%E6%AF%94%E8%BE%83/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/louyunge.github.io/2020/05/11/%E7%82%B9%E4%BA%91%E9%85%8D%E5%87%86%E7%AE%97%E6%B3%95%E6%AF%94%E8%BE%83/" itemprop="commentCount"></span>
+                <a href="/louyunge.github.io/2019/06/28/%E7%82%B9%E4%BA%91%E9%85%8D%E5%87%86%E7%AE%97%E6%B3%95%E6%AF%94%E8%BE%83/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/louyunge.github.io/2019/06/28/%E7%82%B9%E4%BA%91%E9%85%8D%E5%87%86%E7%AE%97%E6%B3%95%E6%AF%94%E8%BE%83/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -327,7 +349,7 @@
 
           
           
-             <span id="/louyunge.github.io/2020/05/11/%E7%82%B9%E4%BA%91%E9%85%8D%E5%87%86%E7%AE%97%E6%B3%95%E6%AF%94%E8%BE%83/" class="leancloud_visitors" data-flag-title="点云配准算法比较">
+             <span id="/louyunge.github.io/2019/06/28/%E7%82%B9%E4%BA%91%E9%85%8D%E5%87%86%E7%AE%97%E6%B3%95%E6%AF%94%E8%BE%83/" class="leancloud_visitors" data-flag-title="几种点云配准算法比较">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -489,6 +511,15 @@
               </div>
             
 
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/louyunge.github.io/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
             
 
             
